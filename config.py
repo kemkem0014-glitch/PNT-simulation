@@ -13,8 +13,11 @@ class Config:
     receiver_lon_deg: float = 139.6503
     receiver_alt_m: float = 40.0
 
-    # Synthetic LEO constellation
-    leo_satellites: int = 12
+    # Synthetic LEO constellation.
+    # 216 satellites is used in Ver.1 so that the simplified geometry normally
+    # leaves several satellites above the elevation mask. This is not intended
+    # to reproduce a specific operational constellation.
+    leo_satellites: int = 216
     leo_altitude_m: float = 550_000.0
     leo_inclination_deg: float = 53.0
     elevation_mask_deg: float = 10.0
@@ -28,7 +31,7 @@ class Config:
     iridium_time_sigma_ns: float = 50.0
     iridium_update_interval_s: float = 1.0
 
-    # EKF initial errors after GNSS loss
+    # EKF initial errors immediately after GNSS loss
     initial_position_sigma_m: float = 20.0
     initial_velocity_sigma_mps: float = 0.2
     initial_clock_bias_ns: float = 200.0
