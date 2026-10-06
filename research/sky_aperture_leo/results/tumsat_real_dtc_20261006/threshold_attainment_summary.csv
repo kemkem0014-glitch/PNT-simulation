@@ -1,0 +1,5 @@
+target_m,success_within_60min_percent,median_wait_min_if_success,p90_wait_min_if_success
+50,43.70477568740955,53.0,59.0
+100,98.55282199710564,30.0,45.0
+200,98.55282199710564,26.0,41.0
+500,98.55282199710564,26.0,40.0

@@ -1,0 +1,45 @@
+{
+  "generated_utc": "2026-10-06T03:01:12.805109+00:00",
+  "celestrak_url": "https://celestrak.org/NORAD/elements/gp.php?GROUP=starlink&FORMAT=csv",
+  "dtc_filter": "OBJECT_NAME contains [DTC]",
+  "dtc_satellite_count": 637,
+  "simulation_start_utc": "2026-10-06T00:00:00+00:00",
+  "simulation_hours": 24.0,
+  "coarse_detection_step_s": 5.0,
+  "fine_observation_step_s": 1,
+  "waiting_start_step_min": 2,
+  "max_wait_min": 60,
+  "reference_point": {
+    "name": "Tokyo University of Marine Science and Technology, Kubo Lab public RTK base",
+    "lat_deg": 35.6662430056,
+    "lon_deg": 139.7923087,
+    "height_m": 59.9
+  },
+  "apertures": [
+    {
+      "name": "A1_NE",
+      "az_deg": 45.0,
+      "el_deg": 45.0,
+      "diameter_deg": 10.0
+    },
+    {
+      "name": "A2_S",
+      "az_deg": 180.0,
+      "el_deg": 55.0,
+      "diameter_deg": 10.0
+    },
+    {
+      "name": "A3_NW",
+      "az_deg": 315.0,
+      "el_deg": 45.0,
+      "diameter_deg": 10.0
+    }
+  ],
+  "measurement_model": {
+    "observable": "equivalent geometric range-rate / Doppler",
+    "sigma_range_rate_mps": 0.2,
+    "nuisance": "independent constant frequency/range-rate bias per satellite",
+    "crlb": "2-D horizontal information after Schur elimination of per-satellite biases"
+  },
+  "caveat": "This is a current-element-set geometry study, not a statement that every catalogued DTC satellite is transmitting a usable positioning observable in Japan. SGP4 propagation from a single snapshot is intentionally limited to the configured short horizon."
+}
