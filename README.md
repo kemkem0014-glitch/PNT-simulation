@@ -94,3 +94,15 @@ python main.py
 ## 研究上の中心的な問い
 
 > GNSSが利用できない環境で、Iridium系PNTによって時刻を拘束した場合、既存LEO通信衛星のDoppler測位精度と収束性がどの程度改善するか。
+
+
+---
+
+## Research study: Sky-Aperture Geometry for Single-LEO Doppler Positioning
+
+遮蔽環境における「天空開口部の数・大きさ・配置」が、単一LEO衛星の時間分散Doppler測位へ与える影響をFIM/CRLBとMonte Carloで評価する独立研究を追加しました。
+
+- Code: `research/sky_aperture_leo/aperture_leo_sim.py`
+- Study README: `research/sky_aperture_leo/README.md`
+- Current report: `research/sky_aperture_leo/REPORT.md`
+- Reproducible CSV results: `research/sky_aperture_leo/results/`
