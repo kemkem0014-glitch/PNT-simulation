@@ -1,0 +1,40 @@
+name: Reproduce 3D LEO-PNT manuscript Tables 8-12
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/reproduce-3d-paper-20261006.yml'
+      - 'research/sky_aperture_leo/reproduce_3d_paper_20261006.py'
+permissions:
+  contents: write
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install scientific packages
+        run: python -m pip install numpy pandas sgp4
+      - name: Recompute paper data from frozen DTC OMM
+        run: python -u research/sky_aperture_leo/reproduce_3d_paper_20261006.py
+      - name: Upload complete raw data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-tables-8-to-12-3d-raw-20261006
+          path: research/sky_aperture_leo/results/reproduced_3d_20261006/
+          retention-days: 90
+      - name: Commit reproducible raw results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/sky_aperture_leo/results/reproduced_3d_20261006/
+          if git diff --cached --quiet; then
+            echo "No data changed"
+          else
+            git commit -m "Reproduce 3D LEO-PNT paper tables 8-12 and save raw cases"
+            git push
+          fi
