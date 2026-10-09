@@ -1,0 +1,7 @@
+config,H_le_100m_first_wait_min,H_le_50m_first_wait_min,H_le_20m_first_wait_min
+D1,60,,
+D2,45,,
+D3,30,,
+D4,15,30,60
+D5,15,30,
+D6,10,15,30

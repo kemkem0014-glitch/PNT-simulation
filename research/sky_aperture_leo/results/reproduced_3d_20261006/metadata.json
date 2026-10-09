@@ -1,0 +1,236 @@
+{
+  "source_input": "results/tumsat_real_dtc_20261006/dtc_omm_snapshot.csv",
+  "source_sha256": "4e10ed176b05a9228e226e08491fff03c39b3ea7ce5cc81a0f7c9f0e24676bad",
+  "generated_utc": "2026-10-09T04:10:03.377610+00:00",
+  "analysis_start_utc": "2026-10-06T00:00:00Z",
+  "analysis_duration_hours": 24,
+  "n_dtc": 637,
+  "skipped_norad": [],
+  "receiver": {
+    "lat_deg": 35.6662430056,
+    "lon_deg": 139.7923087,
+    "height_m": 59.9
+  },
+  "coarse_step_s": 60,
+  "candidate_elevation_threshold_deg": 5,
+  "candidate_pad_s": 180,
+  "final_step_s": 1,
+  "sigma_range_rate_mps": 0.2,
+  "bias_model": "independent constant bias per satellite and evaluation window",
+  "receiver_state": "ECEF x,y,z unknown, stationary receiver",
+  "start_offset_s_step": 120,
+  "n_starts": 691,
+  "waits_distributed_min": [
+    5,
+    10,
+    15,
+    20,
+    30,
+    45,
+    60
+  ],
+  "waits_concentrated_min": [
+    10,
+    20,
+    30,
+    45,
+    60
+  ],
+  "rank_rule": "eig_min>1e-18 and eig_min/eig_max>1e-12",
+  "input_time_scale": "SGP4 UTC converted by JD approximation",
+  "teme_to_ecef": "GMST with omega-earth velocity correction; no polar motion",
+  "configs": {
+    "D1": {
+      "n": 1,
+      "kind": "distributed",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 5.0
+    },
+    "C1": {
+      "n": 1,
+      "kind": "concentrated",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 4.999999999999992
+    },
+    "D2": {
+      "n": 2,
+      "kind": "distributed",
+      "centers": [
+        [
+          0.0,
+          45.0
+        ],
+        [
+          180.0,
+          45.0
+        ]
+      ],
+      "radius_deg": 5.0
+    },
+    "C2": {
+      "n": 2,
+      "kind": "concentrated",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 7.073315169027042
+    },
+    "D3": {
+      "n": 3,
+      "kind": "distributed",
+      "centers": [
+        [
+          0.0,
+          35.264389682754654
+        ],
+        [
+          120.0,
+          35.264389682754654
+        ],
+        [
+          240.0,
+          35.264389682754654
+        ]
+      ],
+      "radius_deg": 5.0
+    },
+    "C3": {
+      "n": 3,
+      "kind": "concentrated",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 8.66576364940896
+    },
+    "D4": {
+      "n": 4,
+      "kind": "distributed",
+      "centers": [
+        [
+          0.0,
+          35.264389682754654
+        ],
+        [
+          90.0,
+          35.264389682754654
+        ],
+        [
+          180.0,
+          35.264389682754654
+        ],
+        [
+          270.0,
+          35.264389682754654
+        ]
+      ],
+      "radius_deg": 5.0
+    },
+    "C4": {
+      "n": 4,
+      "kind": "concentrated",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 10.009551144071938
+    },
+    "D5": {
+      "n": 5,
+      "kind": "distributed",
+      "centers": [
+        [
+          0.0,
+          35.264389682754654
+        ],
+        [
+          72.0,
+          35.264389682754654
+        ],
+        [
+          144.0,
+          35.264389682754654
+        ],
+        [
+          216.0,
+          35.264389682754654
+        ],
+        [
+          288.0,
+          35.264389682754654
+        ]
+      ],
+      "radius_deg": 5.0
+    },
+    "C5": {
+      "n": 5,
+      "kind": "concentrated",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 11.194590169449096
+    },
+    "D6": {
+      "n": 6,
+      "kind": "distributed",
+      "centers": [
+        [
+          0.0,
+          35.264389682754654
+        ],
+        [
+          60.0,
+          35.264389682754654
+        ],
+        [
+          120.0,
+          35.264389682754654
+        ],
+        [
+          180.0,
+          35.264389682754654
+        ],
+        [
+          240.0,
+          35.264389682754654
+        ],
+        [
+          300.0,
+          35.264389682754654
+        ]
+      ],
+      "radius_deg": 5.0
+    },
+    "C6": {
+      "n": 6,
+      "kind": "concentrated",
+      "centers": [
+        [
+          0.0,
+          22.5
+        ]
+      ],
+      "radius_deg": 12.266978565532812
+    }
+  }
+}
