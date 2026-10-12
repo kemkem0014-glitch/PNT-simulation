@@ -1,0 +1,9 @@
+{
+  "script": "revision_experiments_20261012.py",
+  "source_sha256": "4e10ed176b05a9228e226e08491fff03c39b3ea7ce5cc81a0f7c9f0e24676bad",
+  "cache_samples": 3775206,
+  "days_cached": 2,
+  "valid_3d_limit_m": 1000.0,
+  "sigma_rr_mps": 0.2,
+  "rank_rule": "eig_min>1e-18 and eig_min/eig_max>1e-12"
+}

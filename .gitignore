@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 output/
 .DS_Store
+research/sky_aperture_leo/results/revision_20261012/*.npz
+research/sky_aperture_leo/results/revision_20261012/*.log
+__pycache__/

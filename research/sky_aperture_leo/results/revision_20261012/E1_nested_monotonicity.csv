@@ -1,0 +1,11 @@
+order,K,all_starts_nonincreasing
+seq,2,True
+seq,3,True
+seq,4,True
+seq,5,True
+seq,6,True
+alt,2,True
+alt,3,True
+alt,4,True
+alt,5,True
+alt,6,True
