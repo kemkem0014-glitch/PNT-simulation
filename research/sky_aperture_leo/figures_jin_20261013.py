@@ -67,7 +67,7 @@ def fig_wait():
     w = d.wait_min.to_numpy()
     show = d.valid_pct.to_numpy() >= 50
     show90 = d.valid_pct.to_numpy() >= 90
-    fig, ax = plt.subplots(2, 1, figsize=(W_IN, W_IN * 0.95), sharex=True,
+    fig, ax = plt.subplots(2, 1, figsize=(W_IN, W_IN * 0.78), sharex=True,
                            gridspec_kw=dict(height_ratios=[1.15, 1]))
     a = ax[0]
     a.plot(w[show], d.H_med[show], color=C[0], lw=1.3, label="水平 中央値")
@@ -89,7 +89,7 @@ def fig_wait():
 
 def fig_az():
     d = pd.read_csv(RES / "E2_azimuth_sweep.csv")
-    fig, ax = plt.subplots(figsize=(W_IN, W_IN * 0.62))
+    fig, ax = plt.subplots(figsize=(W_IN, W_IN * 0.55))
     for k, n in enumerate((3, 4, 5, 6)):
         s = d[d.N == n].sort_values("A0")
         ax.plot(s.A0, s.H_med, marker="o", ms=2, lw=1.1, color=C[k], label=f"N={n}")
