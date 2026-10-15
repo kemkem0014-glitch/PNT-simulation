@@ -98,11 +98,12 @@ python main.py
 
 ---
 
-## Research study: Sky-Aperture Geometry for Single-LEO Doppler Positioning
+## 研究：遮蔽環境における Starlink Direct-to-Cell ドップラー測位（理想化天空開口モデル）
 
-遮蔽環境における「天空開口部の数・大きさ・配置」が、単一LEO衛星の時間分散Doppler測位へ与える影響をFIM/CRLBとMonte Carloで評価する独立研究を追加しました。
+天空の一部しか見えない環境を「直径10°の円形開口がN個（N=1～6）ある」と理想化し、Starlink Direct-to-Cell衛星637機（実軌道要素・SGP4）のドップラー観測で得られる3次元位置精度の下限（CRLB）と所要待ち時間を評価した研究です。日本航海学会論文集（JIN）投稿原稿の計算コードと結果をすべて含みます。
 
-- Code: `research/sky_aperture_leo/aperture_leo_sim.py`
-- Study README: `research/sky_aperture_leo/README.md`
-- Current report: `research/sky_aperture_leo/REPORT.md`
-- Reproducible CSV results: `research/sky_aperture_leo/results/`
+- 説明・ファイル構成・実行方法：`research/sky_aperture_leo/README.md`
+- 図1：`research/sky_aperture_leo/make_fig1.py`
+- 表1～8の元データ：`research/sky_aperture_leo/revision_experiments_20261012.py` → `results/revision_20261012/`
+- 図2・図3：`research/sky_aperture_leo/figures_jin_20261013.py`
+- 入力（軌道要素、2026-10-06保存）：`research/sky_aperture_leo/results/tumsat_real_dtc_20261006/dtc_omm_snapshot.csv`
